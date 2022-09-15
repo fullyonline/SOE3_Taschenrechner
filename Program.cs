@@ -16,10 +16,13 @@ Double readNumberFromUser()
     return number;
 }
 
-while (true)
-{
+int operation; 
+Double number1;
+Double number2;
+Double result = 0;
+
+while (true){
     Console.Clear();
-    int operation;
     Console.WriteLine("Taschenrechner");
     Console.WriteLine("---------------");
     Console.WriteLine("Optionen:");
@@ -36,10 +39,10 @@ while (true)
         }
     } while (operation != 1 && operation != 2);
     Console.WriteLine("Geben Sie die erste Zahl ein:");
-    Double number1 = readNumberFromUser();
+    number1 = readNumberFromUser();
     Console.WriteLine("Geben Sie die zweite Zahl ein:");
-    Double number2 = readNumberFromUser();
-    Double result = 0;
+    number2 = readNumberFromUser();
+    result = 0;
     if(operation == 1)
     {
         result = number1 + number2;
